@@ -267,7 +267,7 @@ nav {
 .mobile-nav {
   background-color: #54a892;
   display: none;
-  height: 100%;
+  height: 100vh;
   opacity: 0;
   position: fixed;
   top: 0;
@@ -329,7 +329,7 @@ nav {
 }
 
 .menu__icon {
-  display: block;
+  display: none;
   height: 34px;
   margin: 0 auto;
   position: relative;
@@ -404,7 +404,7 @@ hr {
   max-width: 680px;
   position: relative;
 }
-
+/*
 hr.center-ball:before {
   background: #54a892;
   border: 2px solid #54a892;
@@ -420,6 +420,7 @@ hr.center-ball:before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
 }
+*/
 
 
 // google maps
@@ -434,13 +435,7 @@ iframe, object, embed{max-width: 100%;}
   display: none;
 }
 
-// Bridal Party
 
-.clmn img {
-  border-radius: 50%;
-  border: 5px solid #54a892;
-  width: 35%;
-}
 
 // top button
 
