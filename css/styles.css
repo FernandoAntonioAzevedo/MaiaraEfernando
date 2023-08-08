@@ -23,7 +23,8 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: fixed;
+  justify-content: center;
   padding: 18px 40px;
   box-shadow: 0 0.1rem 0.5rem #ccc;
   width: 100%;
@@ -108,26 +109,54 @@ body {
 }
 
 .home-img img {
-  width: 100vh;
+  width: 75vh;
+  align-content: center;
+  margin-left: 450px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  
+  
 }
 
-.noiva {
-  display: grid;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
+.noiva,
 .noivo {
   display: grid;
   text-align: center;
+  gap: 14px;
   justify-content: center;
   flex-direction: column;
+  
+}
+
+.cerimony {
+  display: grid;
+  margin-top: 14px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+}
+
+.box-img {
+  border-radius: 10%;
+  flex-direction: column;
+  justify-items: center;
+  flex-wrap: wrap;
+ 
+}
+
+.img-box-all {
+  grid-column: auto;
+  grid-template-columns: auto;
+  align-items: center; 
+  justify-content: center;
+  align-self: auto;
 }
 
 
 
-@media (max-width: 785px) {
+@media (max-width: 450px) {
   .navigation {
       padding: 18px 20px;
   }
@@ -146,6 +175,7 @@ body {
 
   .nav-menu {
       position: fixed;
+      justify-content: flex-start;
       right: -100%;
       top: 70px;
       width: 100%;
@@ -170,19 +200,9 @@ body {
       text-align: center;
       overflow: hidden;
       gap: 5rem;
-  }
-  .home .text-h4 {
-      font-size: 15px;
-  }
-  .home .text-h1 {
-      font-size: 2.5rem;
-      line-height: 3rem;
-  }
-  .home p {
-      font-size: 15px;
-  }
-  .home-img {
-      width: 125%;
-  }
+      justify-content: center;
+      
+    
+  }  
 
 }
