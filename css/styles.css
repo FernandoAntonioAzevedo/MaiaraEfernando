@@ -39,7 +39,7 @@ body {
 #disclaimer h2,
 #disclaimer .event-date {
   color: var(--primary);
-  margin-left: 400px;
+  margin-left: 300px;
   margin-top: 70px;
 }
 
@@ -54,18 +54,18 @@ body {
   max-width: 350px;
   font-weight: bold;
   margin-bottom: 1em;
-  margin-left: 400px;
+  margin-left: 300px;
 }
 
 #disclaimer p {
   font-size: 1.2em;
   margin-bottom: 0.3em;
-  margin-left: 400px;
+  margin-left: 300px;
 }
 
 #disclaimer .event-date {
   font-weight: bold;
-  margin-left: 400px;
+  margin-left: 300px;
 }
 
 #subscription-form {
@@ -439,10 +439,16 @@ p {
 
   #disclaimer {
     padding: 2em;
+    justify-content: center;    
+    align-items: flex-start;
+    margin-right: 200px;
+    font-size: 14px;
+    text-decoration: solid;
+    color: var(--white);
   }
 
   #disclaimer h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
   }
 
   #subscription-form {
