@@ -152,22 +152,22 @@ body {
 }
 
 #benefit-1 {
-  background-image: url("/imagens/vilafrancisca\ area\ externa.jpg");
+  background-image: url("https://scontent.fbfh2-1.fna.fbcdn.net/v/t39.30808-6/275544893_2512857105523335_7498748533011564695_n.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=a26aad&_nc_ohc=N9T2Sm6EpYMAX9bxKoF&_nc_ht=scontent.fbfh2-1.fna&oh=00_AfCuuE9nnptZizgZuTUaHgWrvrNipGfQwlwDD-swfvlwGQ&oe=64DA6825");
 }
 
 #benefit-2 {
-  background-image: url("/imagens/MaiaraFernando.jpg");
+  background-image: url("https://scontent.fbfh2-1.fna.fbcdn.net/v/t1.6435-9/123552978_2022671861203267_7668070362866546828_n.jpg?_nc_cat=100&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=knkbNvnmwtMAX-PWDZ0&_nc_ht=scontent.fbfh2-1.fna&oh=00_AfDT12jS8yXWwECW1yGtdWnVx590h2QkB-Ec5cbq4zzgKw&oe=64FC1979");
 }
 
 #benefit-3 {
-  background-image: url("/imagens/paroquiasenhorbomjesus.jpg");
+  background-image: url("https://scontent.fbfh2-1.fna.fbcdn.net/v/t39.30808-6/240768949_4283204608467880_6805420257091414651_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=e3f864&_nc_ohc=lnTTCwz0FL0AX9eudJH&_nc_ht=scontent.fbfh2-1.fna&oh=00_AfAZN2B8bY-ci-jA25Rj2WFpW-iFcxomoyGixuQ6Ws5PAQ&oe=64D8E894");
 }
 
 /* Event location */
 #location {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/imagens/paroquiasenhorbomjesus.jpg");
+    url("https://mapio.net/images-p/8814990.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
