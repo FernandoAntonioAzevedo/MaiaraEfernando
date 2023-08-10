@@ -23,7 +23,7 @@ body {
 /* Event form */
 #event-subscription {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/imagens/Groom-And-Bride-PNG-Picture.png");
+    url("https://www.pngarts.com/files/4/Groom-And-Bride-PNG-Picture.png");
   background-position: auto;  
   background-size: cover;
   height: 90vh;
