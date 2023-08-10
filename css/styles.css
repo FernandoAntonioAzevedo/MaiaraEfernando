@@ -18,18 +18,21 @@
 body {
   color: var(--dark);
   background: white;
-
+}
 
 /* Event form */
 #event-subscription {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/imagens/Groom-And-Bride-PNG-Picture.png");
-  background-position: center;  
+  background-position: auto;  
+  background-size: cover;
   height: 90vh;
+  width: auto;
   display: flex;
-  justify-items: flex-end;
+  margin-top: 60px;
   align-items: center;
   color: var(--red);
+  flex-direction: column;
   
 }
 
@@ -37,6 +40,7 @@ body {
 #disclaimer .event-date {
   color: var(--primary);
   margin-left: 400px;
+  margin-top: 70px;
 }
 
 #disclaimer h2 {
@@ -163,13 +167,13 @@ body {
 #location {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/hrz-1.jpg");
+    url("/imagens/paroquiasenhorbomjesus.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  color: var(--text-color);
+  justify-content: space-evenly;
+  color: var(--red);
   margin-bottom: 3em;
 }
 
@@ -183,7 +187,7 @@ body {
 }
 
 #address i {
-  color: var(--primary);
+  color: var(--red);
   font-size: 4em;
   margin-right: 0.5em;
 }
@@ -194,7 +198,7 @@ body {
 }
 
 #about-location h3 {
-  color: var(--primary);
+  color: var(--red);
   font-size: 2.5em;
   margin-bottom: 1em;
   text-transform: uppercase;
@@ -206,53 +210,320 @@ body {
 
 
 
-@media (max-width: 393px) {
-  .navigation {
-      padding: 18px 20px;
+
+
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.card-column {
+  width: 50%;
+  float: left;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.column-1 {
+  padding-top: 100px;
+}
+
+.card {
+  width: 92%;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background: #EB5160;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  border: 1px solid #fff;
+  opacity: 0.5;
+  left: -6px;
+  top: -6px;
+}
+
+.card h1 {
+  position: relative;
+  padding: 190px 0px 100px 10px;
+  width: 90%;
+}
+
+.card > img {
+  width: 90%;
+  position: absolute;
+  top: -6%;
+  left: -6%;
+}
+
+.card-color-0 {
+  background-color: #EB5160;
+}
+
+.card-color-1 {
+  background-color: #8F3985;
+}
+
+.card-color-2 {
+  background-color: #8DAA91;
+}
+
+.card-color-3 {
+  background-color: #888DA7;
+}
+
+/* The cover (expanding background) */
+.cover {
+  position: fixed;
+  background: var(--red);
+  z-index: 100;
+  transform-origin: 50% 50%;
+}
+
+/* The open page content */
+.open-content {
+  width: 100%;
+  z-index: 110;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.open-content img {
+  position: relative;
+  width: 90%;
+  margin-left: 3%;
+  margin-top: 20px;
+  z-index: 5;
+}
+
+.open-content .text {
+  background: #fff;
+  margin-top: -56%;
+  padding: 60% 5% 5% 5%;
+  width: 80%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.open-content .text h1, .open-content .text p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close-content {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+}
+
+.close-content span {
+  background: #222;
+  width: 30px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  top: 14px;
+}
+
+.x-1 {
+  transform: rotate(45deg);
+}
+
+.x-2 {
+  transform: rotate(-45deg);
+}
+
+/* 
+** Transitions
+*/
+
+.card {
+  transition: opacity 200ms linear 320ms, transform 200ms ease-out 320ms;
+}
+
+.border {
+  transition: opacity 200ms linear, transform 200ms ease-out;
+}
+
+.card img {
+  transition: opacity 200ms linear 0ms, transform 200ms ease-in 0ms;
+}
+
+.card h1 {
+  transform: translate3d(20%, 0px, 0px);  
+  transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
+}
+
+/* Clicked card */
+.card.clicked img {
+  transform: translate3d(0px, -40px, 0px);
+  opacity: 0;
+}
+
+.card.clicked .border {
+  opacity: 0;
+  transform: scale(1.3);
+}
+
+.card.out, .card.out img {
+  transform: translate3d(0px, -40px, 0px);
+  opacity: 0;
+}
+
+.card.out h1, .card.clicked h1 {
+  transform: translate3d(20%, -40px, 0px);
+  opacity: 0;
+}
+
+.cover {
+  transition: transform 300ms ease-in-out;
+}
+
+.open-content {
+  transition: opacity 200ms linear 0ms;
+}
+
+.open-content.open {
+  opacity: 1;
+  pointer-events: all;
+  transition-delay: 1000ms;
+}
+
+/* 
+** Media Queries
+*/
+
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .card-column {
+    width: 90%;
   }
-  .menu {
-      display: block;
+  
+  .column-1 {
+    padding-top: 0px;
   }
-  .menu.ativo .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-  }
-  .menu.ativo .bar:nth-child(2) {
-      opacity: 0;
-  }
-  .menu.ativo .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+  
+  .open-content img {
+    margin-top: 40px;
   }
 
-  .nav-menu {
-      position: fixed;
-      justify-content: flex-start;
-      right: -100%;
-      top: 70px;
-      width: 100%;
-      height: 100%;
-      flex-direction: column;
-      background: var(--white);
-      gap: -10px;
-      transition: 0.3s;
-  }
-  .nav-menu.ativo {
-      right: 0;
-  } 
-  .nav-item {
-      margin: 16px 0;
+  
+  /* Event form */
+  #event-subscription {
+    flex-direction: column;
+    height: auto;
   }
 
-  /*main*/
+  #disclaimer {
+    padding: 2em;
+  }
 
-  .home {
-      padding: 100px 2%;
-      flex-direction: column;
-      text-align: center;
-      overflow: hidden;
-      gap: 5rem;
-      justify-content: center;
-      
-    
-  }  
+  #disclaimer h2 {
+    margin-bottom: 0.5em;
+  }
 
+  #subscription-form {
+    max-width: 70%;
+    margin-bottom: 2em;
+  }
+
+  /* Benefits section */
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+  }
+
+  .benefit {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  /* Event location */
+  #location {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  #address {
+    order: 2;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #address i {
+    margin: 0.3em 0;
+  }
+
+  #about-location {
+    order: 1;
+    max-width: 100%;
+  }
+
+  #about-location h3 {
+    margin-bottom: 0;
+  }
+
+  #about-location p {
+    display: none;
+  }
+
+  /* Event details container */
+  .detail {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
+
+  .detail img {
+    width: 100%;
+    margin: 2em 0;
+  }
+
+  #detail-1 img {
+    display: none;
+  }
+
+  .detail-description {
+    padding: 0;
+  }
+
+  #detail-3 img {
+    order: 2;
+  }
+
+  #detail-3 .detail-description {
+    order: 1;
+  }
+
+  /* Call to Action Section */
+  #cta .btn {
+    width: 80%;
+  }
 }
