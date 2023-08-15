@@ -10,14 +10,16 @@
 }
 
 :root {
-  --red: #f29ee2;
-  --white: #ffffff;
-  --dark: #1e1c2a;
+  --primary: rgb(157, 240, 214);
+  --secondary: rgb(205, 255, 239);
+  --text-color: rgb(219, 239, 232);
+  --text-secondary: rgb(123, 238, 202);
+  --text-tertiary: ;
 }
 
 body {
-  color: var(--dark);
-  background: white;
+  --text-secondary: rgb(123, 238, 202);
+  background: rgb(189, 209, 188);
 }
 
 /* Event form */
@@ -30,8 +32,10 @@ body {
   width: auto;
   display: flex;
   align-items: center;
-  color: var(--red);
+  --primary: rgb(157, 240, 214); 
   flex-direction: column;
+  --text-secondary: rgb(123, 238, 202);
+  
   
 }
 
@@ -48,12 +52,13 @@ body {
 }
 
 #disclaimer .about-event {
-  font-size: 2em;
+  font-size: 1,25rem;
   text-transform: uppercase;
   max-width: 350px;
   font-weight: bold;
   margin-bottom: 1em;
   margin-left: 300px;
+  --text-color: rgb(219, 239, 232);
 }
 
 #disclaimer p {
@@ -86,7 +91,7 @@ body {
 }
 
 .form-group label {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   margin-bottom: 0.3em;
   font-weight: bold;
 }
@@ -144,14 +149,14 @@ body {
 .benefit .benefit-img {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  border-radius: 7%;
   background-size: cover;
   background-position: center;
   margin-bottom: 1em;
 }
 
 #benefit-1 {
-  background-image: url("https://scontent.fbfh2-1.fna.fbcdn.net/v/t39.30808-6/275544893_2512857105523335_7498748533011564695_n.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=a26aad&_nc_ohc=N9T2Sm6EpYMAX9bxKoF&_nc_ht=scontent.fbfh2-1.fna&oh=00_AfCuuE9nnptZizgZuTUaHgWrvrNipGfQwlwDD-swfvlwGQ&oe=64DA6825");
+  background-image: url("https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/275544893_2512857105523335_7498748533011564695_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a26aad&_nc_ohc=8M8zlkQTmpMAX_zX1LX&_nc_ht=scontent-gru2-1.xx&oh=00_AfAjyjr3a76-PB6GWid9HMI7liP0YPq7SQkR7Qpf5iiyCw&oe=64E056E5");
 }
 
 #benefit-2 {
@@ -159,7 +164,7 @@ body {
 }
 
 #benefit-3 {
-  background-image: url("https://scontent.fbfh2-1.fna.fbcdn.net/v/t39.30808-6/240768949_4283204608467880_6805420257091414651_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=e3f864&_nc_ohc=lnTTCwz0FL0AX9eudJH&_nc_ht=scontent.fbfh2-1.fna&oh=00_AfAZN2B8bY-ci-jA25Rj2WFpW-iFcxomoyGixuQ6Ws5PAQ&oe=64D8E894");
+  background-image: url("http://127.0.0.1:5500/imagens/paroquiasenhorbomjesus.jpg");
 }
 
 /* Event location */
@@ -172,7 +177,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: var(--red);
+  color: var(--primary);
   margin-bottom: 3em;
 }
 
