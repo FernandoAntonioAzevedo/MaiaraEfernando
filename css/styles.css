@@ -29,7 +29,6 @@ body {
   height: 90vh;
   width: auto;
   display: flex;
-  margin-top: 60px;
   align-items: center;
   color: var(--red);
   flex-direction: column;
