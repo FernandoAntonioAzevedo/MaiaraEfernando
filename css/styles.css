@@ -244,7 +244,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  background: #EB5160;
+  background:  rgb(157, 240, 214);;
   color: #fff;
   cursor: pointer;
   margin-bottom: 60px;
@@ -275,19 +275,19 @@ p {
 }
 
 .card-color-0 {
-  background-color: #EB5160;
+  background-color: rgb(157, 240, 214);;
 }
 
 .card-color-1 {
-  background-color: #8F3985;
+  background-color: rgb(205, 255, 239);
 }
 
 .card-color-2 {
-  background-color: #8DAA91;
+  background-color: rgb(123, 238, 202);
 }
 
 .card-color-3 {
-  background-color: #888DA7;
+  background-color: rgb(205, 255, 239);
 }
 
 /* The cover (expanding background) */
@@ -448,7 +448,7 @@ p {
     margin-right: 200px;
     font-size: 14px;
     text-decoration: solid;
-    color: var(--white);
+    color: rgb(142, 182, 168);
   }
 
   #disclaimer h2 {
