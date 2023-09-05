@@ -123,7 +123,8 @@ body {
 
 
 
-/* Benefits section */
+/* Principais informações do evento*/
+
 #key-benefits h2 {
   background-color: var(--secondary);
   text-align: center;
@@ -151,18 +152,18 @@ body {
 .benefit .benefit-img {
   width: 250px;
   height: 250px;
-  border-radius: 7%;
+  border-radius: 50%;
   background-size: cover;
   background-position: center;
   margin-bottom: 1em;
 }
 
 #benefit-1 {
-  background-image: url("https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/275544893_2512857105523335_7498748533011564695_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a26aad&_nc_ohc=8M8zlkQTmpMAX_zX1LX&_nc_ht=scontent-gru2-1.xx&oh=00_AfAjyjr3a76-PB6GWid9HMI7liP0YPq7SQkR7Qpf5iiyCw&oe=64E056E5");
+  background-image: url("/imagens/fachada_donaFrancisca.jpg");
 }
 
 #benefit-2 {
-  background-image: url("https://scontent.fbfh2-1.fna.fbcdn.net/v/t1.6435-9/123552978_2022671861203267_7668070362866546828_n.jpg?_nc_cat=100&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=knkbNvnmwtMAX-PWDZ0&_nc_ht=scontent.fbfh2-1.fna&oh=00_AfDT12jS8yXWwECW1yGtdWnVx590h2QkB-Ec5cbq4zzgKw&oe=64FC1979");
+  background-image: url("/imagens/MaiaraFernando.jpg");
 }
 
 #benefit-3 {
