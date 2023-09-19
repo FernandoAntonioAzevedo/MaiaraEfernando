@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;    
-  list-style: none;
-  text-decoration: none;
-}
-
 :root {
   --primary: rgb(157, 240, 214);
   --secondary: rgb(205, 255, 239);
@@ -23,21 +12,26 @@ body {
   text-decoration: solid;
 }
 
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
 /* Event form */
 #event-subscription {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("https://www.pngarts.com/files/4/Groom-And-Bride-PNG-Picture.png");
-  background-position: auto;  
+  background-position: auto;
   background-size: cover;
   height: 90vh;
   width: auto;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   --primary: rgb(157, 240, 214); 
   flex-direction: column;
   --text-secondary: rgb(123, 238, 202);
-  
-  
 }
 
 #disclaimer h2,
@@ -74,37 +68,7 @@ body {
   margin-left: 300px;
 }
 
-#subscription-form {
-  background-color: var(--secondary);
-  padding: 2em;
-  max-width: 22%;
-}
 
-#subscription-form p {
-  font-size: 1.5em;
-  color: var(--text-secondary);
-  margin-bottom: 1em;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.8em;
-}
-
-.form-group label {
-  color: var(--text-secondary);
-  margin-bottom: 0.3em;
-  font-weight: bold;
-}
-
-.form-group input,
-.form-group select {
-  padding: 6px 8px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
 
 .btn {
   background-color: var(--primary);
@@ -121,10 +85,7 @@ body {
   opacity: 1;
 }
 
-
-
-/* Principais informações do evento*/
-
+/* Benefits section */
 #key-benefits h2 {
   background-color: var(--secondary);
   text-align: center;
@@ -167,14 +128,14 @@ body {
 }
 
 #benefit-3 {
-  background-image: url("http://127.0.0.1:5500/imagens/paroquiasenhorbomjesus.jpg");
+  background-image: url("/imagens/paroquiasenhorbomjesus.jpg");
 }
 
 /* Event location */
 #location {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("https://mapio.net/images-p/8814990.jpg");
+    url("/imagens/paroquiasenhorbomjesus.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -194,7 +155,7 @@ body {
 }
 
 #address i {
-  color: var(--red);
+  color: var(--primary);
   font-size: 4em;
   margin-right: 0.5em;
 }
@@ -215,229 +176,109 @@ body {
   line-height: 1.5em;
 }
 
-
-
-
-
-
-p {
-  line-height: 1.5;
-}
-
-.container {
-  max-width: 800px;
+/* Event details container */
+#details {
+  width: 80%;
   margin: 0 auto;
 }
 
-/* Cards */
-.card-column {
+.detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5%;
+  margin-bottom: 4em;
+}
+
+.detail img {
   width: 50%;
-  float: left;
-  padding: 4%;
-  box-sizing: border-box;
 }
 
-.column-1 {
-  padding-top: 100px;
+.detail h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500;
 }
 
-.card {
-  width: 92%;
-  max-width: 340px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  background:  rgb(157, 240, 214);;
-  color: #fff;
-  cursor: pointer;
-  margin-bottom: 60px;
+#detail-1 h3 {
+  font-size: 3em;
+  font-weight: 700;
 }
 
-.border {
-  position: absolute;
+.detail-description {
   width: 100%;
-  height: 100%;
-  padding: 6px;
-  border: 1px solid #fff;
-  opacity: 0.5;
-  left: -6px;
-  top: -6px;
+  padding-left: 2em;
 }
 
-.card h1 {
-  position: relative;
-  padding: 190px 0px 100px 10px;
-  width: 90%;
+#detail-3 .detail-description {
+  justify-self: flex-start;
 }
 
-.card > img {
-  width: 90%;
-  position: absolute;
-  top: -6%;
-  left: -6%;
+.detail-description ul {
+  list-style-position: inside;
 }
 
-.card-color-0 {
-  background-color: rgb(157, 240, 214);;
+.detail-description ul li {
+  margin-bottom: 0.4em;
 }
 
-.card-color-1 {
-  background-color: rgb(205, 255, 239);
+.detail-description ul li:last-child {
+  font-weight: bold;
 }
 
-.card-color-2 {
-  background-color: rgb(123, 238, 202);
+/* Call to Action Section */
+#cta {
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/hrz-6.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-color);
 }
 
-.card-color-3 {
-  background-color: rgb(205, 255, 239);
+#cta h3 {
+  margin-bottom: 1.2em;
+  font-size: 2em;
+  font-weight: 500;
 }
 
-/* The cover (expanding background) */
-.cover {
-  position: fixed;
-  background: var(--red);
-  z-index: 100;
-  transform-origin: 50% 50%;
+#cta .btn {
+  width: 30%;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
-/* The open page content */
-.open-content {
-  width: 100%;
-  z-index: 110;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
+/* Footer */
+#footer {
+  text-align: center;
+  color: var(--secondary);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.open-content img {
-  position: relative;
-  width: 90%;
-  margin-left: 3%;
-  margin-top: 20px;
-  z-index: 5;
+#footer h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
 }
 
-.open-content .text {
-  background: #fff;
-  margin-top: -56%;
-  padding: 60% 5% 5% 5%;
-  width: 80%;
-  margin-left: 5%;
-  margin-bottom: 5%;
+#footer p:nth-child(2) {
+  margin-bottom: 1em;
+  font-size: 1.2em;
 }
 
-.open-content .text h1, .open-content .text p {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+#footer span {
+  font-weight: bold;
 }
-
-.close-content {
-  display: block;
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  width: 30px;
-  height: 30px;
-}
-
-.close-content span {
-  background: #222;
-  width: 30px;
-  height: 6px;
-  display: block;
-  position: absolute;
-  top: 14px;
-}
-
-.x-1 {
-  transform: rotate(45deg);
-}
-
-.x-2 {
-  transform: rotate(-45deg);
-}
-
-/* 
-** Transitions
-*/
-
-.card {
-  transition: opacity 200ms linear 320ms, transform 200ms ease-out 320ms;
-}
-
-.border {
-  transition: opacity 200ms linear, transform 200ms ease-out;
-}
-
-.card img {
-  transition: opacity 200ms linear 0ms, transform 200ms ease-in 0ms;
-}
-
-.card h1 {
-  transform: translate3d(20%, 0px, 0px);  
-  transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
-}
-
-/* Clicked card */
-.card.clicked img {
-  transform: translate3d(0px, -40px, 0px);
-  opacity: 0;
-}
-
-.card.clicked .border {
-  opacity: 0;
-  transform: scale(1.3);
-}
-
-.card.out, .card.out img {
-  transform: translate3d(0px, -40px, 0px);
-  opacity: 0;
-}
-
-.card.out h1, .card.clicked h1 {
-  transform: translate3d(20%, -40px, 0px);
-  opacity: 0;
-}
-
-.cover {
-  transition: transform 300ms ease-in-out;
-}
-
-.open-content {
-  transition: opacity 200ms linear 0ms;
-}
-
-.open-content.open {
-  opacity: 1;
-  pointer-events: all;
-  transition-delay: 1000ms;
-}
-
-/* 
-** Media Queries
-*/
-
-
-
-
 
 /* Mobile */
-@media screen and (max-width: 600px) {
-  .card-column {
-    width: 90%;
-  }
-  
-  .column-1 {
-    padding-top: 0px;
-  }
-  
-  .open-content img {
-    margin-top: 40px;
-  }
-
-  
+@media (max-width: 450px) {
   /* Event form */
   #event-subscription {
     flex-direction: column;
@@ -446,16 +287,10 @@ p {
 
   #disclaimer {
     padding: 2em;
-    justify-content: center;    
-    align-items: flex-start;
-    margin-right: 200px;
-    font-size: 14px;
-    text-decoration: solid;
-    color: rgb(142, 182, 168);
   }
 
   #disclaimer h2 {
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
   }
 
   #subscription-form {
