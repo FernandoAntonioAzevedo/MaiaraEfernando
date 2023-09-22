@@ -10,17 +10,17 @@
 -------------------------------------------------------------------------------*/
 
 #first-slider .slide1 {
-    background-image: url('../images/slides/1.jpg');
+    background-image: url('../imagens/M+F-212.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 #first-slider .slide2 {
-  background-image: url('../images/slides/2.jpg');
+  background-image: url('../imagens/M+F-142.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 #first-slider .slide3 {
-  background-image: url('../images/slides/3.jpg');
+  background-image: url('../imagens/M+F-57.jpg');
       background-size: cover;
     background-repeat: no-repeat;
 }
