@@ -251,7 +251,7 @@ ul li {
 	-o-transition-duration: 0s;
 	-webkit-transition-duration: 0s;
 	transition-duration: 0s;
-	color: #f05da3;
+	color:rgb(157, 240, 214);
 }
 .nav-toggle span {
 	bottom: auto;
@@ -749,6 +749,7 @@ ul.list-default li {
 	position: relative;
 	border-style: none none solid none !important;
 	padding: 1em 0 0.5em;
+	display: grid;
 }
 .package:hover {
 	background-color: #fbfbfb; 
